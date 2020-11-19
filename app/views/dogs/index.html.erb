@@ -1,0 +1,9 @@
+<!-- For our index page for Dogs, a user should be able to click on a specific dog to go to the corresponding show page.-->
+
+ <h1> Dogs </h1> 
+<% @dogs.each do |dog| %>
+<%= link_to dog.name, dog_path(dog) %> <%= dog.employees.count %><br>
+<% end %> 
+
+
+
